@@ -14,7 +14,7 @@
          
          header {
             
-            background-color: rgb(96, 182, 252)
+            background-color: rgb(255, 255, 184)
                    
          }
          
@@ -24,32 +24,29 @@
             clear: both;
          }
          
+         body {
+            
+            margin: 0;
+            fontweight: 400;
+            
+         }
          
          nav {
             
                float: right;
          }
-         
-         body {
-            margin: 0;
-            backroungd: #222;
-            font-family: 'Work Sans', sans-serif;
-            font weight: 300;
-         }
+        
          
         .img-container {
         text-align: center;
-      } 
+      }
          
-         div {
-            
-           line-height: normal
-            
-         }
+         body { line-height: normal }
          
 .logo {
    
    float: left;
+   padding: 10px 0;
    
          }
          
@@ -66,9 +63,58 @@
          }
          
          nav li {
+            
             display: inline-block;
+            margin-left: 70px;
+            padding-top: 23px;
+            
+            position: relative;
+            
+         }
+            
+            
+          nav a {
+             color: #444;
+             text-decoration: none;
+             text-transform: uppercase;
+             font-size: 14px;
          }
          
+            nav a:hover {
+               
+               color: #000;
+               
+            }
+            
+         header {
+            
+            font-family: "Staatliches", sans-serif; 
+            
+            body {
+               
+               font-family: "Average Sans", sans-serif; }
+            
+            nav a::before {
+               
+               content: " ";
+               display: block;
+               height: 5px;
+               width: 100%
+               background color: #444
+               
+               position: absolute;
+               top: 0;
+               width: 0%;
+               
+               transition: all ease in-out 250ms;
+            }
+            
+            nav a:hover::before {
+               
+               width: 100%
+                  
+            }
+        
       </style>
    
 <body>
@@ -78,7 +124,7 @@
       
       <div class= "container">
          
-    <img src= "https://www.freeiconspng.com/uploads/pepsi-logo-transparent-8.png" alt= "logo" class= "logo" width= "50">
+    <img src= "logo.jpg" alt= "logo" class= "logo" width= "100">
                                                                                                      
          
          <nav>
@@ -111,7 +157,7 @@
    </div>
  
     <div class="img-container">
-       <img src= "https://knowledge.wharton.upenn.edu/wp-content/uploads/2016/03/multigenerational-household.jpg" alt= "Home page image, shows happy multigenerational and multiracial family!" width= "1450">  
+       <img src= "https://cdn.aarp.net/content/dam/aarp/home-and-family/family-and-friends/2018/11/1140-family-vacation.jpg" alt= "Home page image, shows happy multigenerational and multiracial family playing on a beach!" width= "1450">  
     </div>
    
    
