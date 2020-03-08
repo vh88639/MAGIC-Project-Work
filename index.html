@@ -6,8 +6,7 @@
       <header>
         
          <h1 class= "logo">LOGO</h1>
-         <input type="checkbox" class="nav-toogle"
-         /* nav bar here */
+         <input type="checkbox" id="nav-toggle" class="nav-toogle"
          <nav>
             <ul>
                <li><a href="index.html">Home</a></li>
@@ -17,7 +16,7 @@
                <li><a href="contact.html">Contact</a></li>
             </ul>
          </nav>
-         
+      <label for="nav-toggle" class="nav-toggle-label"><span>X</span></label>
       </header>
       
    </body>
@@ -92,8 +91,19 @@
          color: #000;
       }
       
-      .nav-toogle:checked
+      .nav-toogle:checked ~ nav {
+         display: block;
+      }
       
+      .nav-toggle {
+         display: none;
+      }
+      
+      .nav-toggle-label {
+         position: absolute;
+         top: 0;
+         left: 0;
+         margin-left: 1em;
    </style>
 
 <html>
