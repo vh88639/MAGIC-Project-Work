@@ -1,157 +1,57 @@
-<!DOCTYPE html>
+!DOCTYPE html
 
 <html>
    
-      <style>
-
-         .container {
-            width: 80%
-               margin: 0 auto;
-         }
-         
-         header {
-            
-            background-color: rgb(255, 255, 184)
-                   
-         }
-         
-         header::after {
-            content:"";
-            display: table;
-            clear: both;
-         }
-         
-         body {
-            
-            margin: 0;
-            fontweight: 400;
-            
-         }
-         
-         nav {
-            
-               float: right;
-            padding: 10px 0;
-         }
-        
-         
-        .img-container {
-        text-align: center;
-      }
-         
-.logo {
-   
-   float: left;
-   padding: 10px 0;
-   
-         }       
-        
-         nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-         }
-         
-         nav li {
-            
-            display: inline-block;
-            margin-left: 70px;
-            padding-top: 23px;
-            
-            position: relative;
-            
-         }
-            
-            
-          nav a {
-             color: #444;
-             text-decoration: none;
-             text-transform: uppercase;
-             font-size: 14px;
-         }
-         
-            nav a:hover {
-               
-               color: red;
-               
-            }
-            
-         header {
-            
-            font-family: "Staatliches", sans-serif; 
-            text-transform: uppercase;
-         }
-            
-            body {
-               
-               font-family: "Average Sans", sans-serif; }
-            
-            nav a::before {
-               
-               content: " ";
-               display: block;
-               height: 5px;
-               width: 100%
-               background color: #444
-               
-               position: absolute;
-               top: 0;
-               width: 0%;
-               
-               transition: all ease in-out 250ms;
-            }
-            
-            nav a:hover::before {
-               
-               width: 100%
-                  
-            }
-        
-      </style>
-   
-<body>
-  
-   
-   <header>
+   <body>
       
-      <div class= "container">
+      <header>
+        
+         <h1 class= "logo">LOGO</h1>
          
-    <img src= "logo.jpg" alt= "logo" class= "logo" width= "300">
-         
-      </div>
-                                                                                                     
-      <div>
          <nav>
-            
-            
             <ul>
-               
-               <li><a href= "index.html">Home</a></li>
-               <li><a href= "forkids.html">For Kids</a></li>
-               <li><a href= "parentsblog.html">For Parents</a></li>
-               <li><a href= "funstuff.html">Fun Stuff</a></li>
-               <li><a href= "contact.html">Contact Us</a></li>
-               <li><a href= "contact.html"> </a></li>
-               
+               <li><a href="index.html">Home</a></li>
+               <li><a href="forkids.html">For Kids</a></li>
+               <li><a href="parentsblog.html">Blog</a></li>
+               <li><a href="funstuff.html">Fun Stuff</a></li>
+               <li><a href="contact.html">Contact</a></li>
             </ul>
-            
          </nav>
          
-      </div>
+      </header>
       
-   </header>
+   </body>
    
-   <div>
-   <h1> <center>Our Grandparents & Us</center> </h1>
-   <h4> <center>Connecting families across generations</center> </h4>
+   <style>
       
-   </div>
- 
-    <div class="img-container">
-       <img src= "https://cdn.aarp.net/content/dam/aarp/home-and-family/family-and-friends/2018/11/1140-family-vacation.jpg" alt= "Home page image, shows happy multigenerational and multiracial family playing on a beach!" width= "1435">  
-    </div>
+   @importurl('https://fonts.googleleapis.com/css')
    
-   
-</body>
-        
-</html>
+      :root {
+         --background: rgba(85, 214, 170, .85);
+      }
+      
+      *, *::before, *::after {
+         box-sizing: border-box;
+      }
+      
+      body {
+         margin: 0;
+         background: #222;
+         font-family: 'Work Sans', sans-serif;
+         font-weight: 400;
+      }
+      
+      .content {
+         height: 200vh;
+         background-image: url(https://grandpacificresorts.com/wp-content/uploads/2015/07/iStock_000050079002_Double-1600x1600.jpg)
+         background-color: #333;
+         background-blend-mode: multiply;
+         background-size: cover;
+         display: grid;
+      }
+      
+      
+      
+   </style>
+
+<html>
