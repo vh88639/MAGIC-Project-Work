@@ -5,7 +5,8 @@
       <header>
         
          <h1 class= "logo">LOGO</h1>
-         
+         <input type="checkbox" class="nav-toogle"
+         /* nav bar here */
          <nav>
             <ul>
                <li><a href="index.html">Home</a></li>
@@ -25,7 +26,7 @@
    @importurl('https://fonts.googleleapis.com/css')
    
       :root {
-         --background: rgba(85, 214, 170, .85);
+         --background: rgb(130, 245, 255);
       }
       
       *, *::before, *::after {
@@ -34,21 +35,63 @@
       
       body {
          margin: 0;
-         background: rgb(130, 245, 255);
+         background: rgb(202, 194, 255);
          font-family: 'Work Sans', sans-serif;
          font-weight: 400;
       }
       
       .content {
          height: 200vh;
-         background-image: url(https://www.georgiafamily.com/wp-content/uploads/2016/05/family_beach_web.jpg)
+         background-image: url(//www.georgiafamily.com/wp-content/uploads/2016/05/family_beach_web.jpg)
          background-color: rgb(202, 194, 255)
          background-blend-mode: multiply;
          background-size: cover;
          display: grid;
       }
       
+      /* navigation styles start here */
       
+      header {
+         background: var(--background)
+            text-align: center;
+         position: fixed;
+         z-index: 999;
+         width: 100%;
+      }
+      
+      nav {
+         position: absolute;
+         text-align: left;
+         top: 100%;
+         left: 0;
+         background: var(--background);
+         width: 100%;
+         display: none;
+      }
+      
+      nav ul {
+         margin: 0; 
+         padding: 0;
+         list-style: none;
+      }
+      
+      nav li {
+         margin-bottom: 1em;
+         margin-left: 1em;
+      }
+      
+      nav a {
+         color: white;
+         text-decoration: none;
+         font-size: 1.2rem;
+         text-transform: uppercase;
+      }
+      
+      nav a:hover {
+         color: #000;
+      }
+      
+      .nav-toogle:checked
       
    </style>
 
