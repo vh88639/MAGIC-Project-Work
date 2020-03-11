@@ -1,163 +1,157 @@
 <!DOCTYPE html>
+
 <html>
    
-   <body>
-      
-      <header>
-        
-         <h1 class= "logo">LOGO</h1>
-         <input type="checkbox" id="nav-toggle" class="nav-toogle"
-         <nav>
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="forkids.html">For Kids</a></li>
-               <li><a href="parentsblog.html">Blog</a></li>
-               <li><a href="funstuff.html">Fun Stuff</a></li>
-               <li><a href="contact.html">Contact</a></li>
-            </ul>
-         </nav>
-      <label for="nav-toggle" class="nav-toggle-label"><span>X</span></label>
-      </header>
-      
-   </body>
-   
-   <style>
-      
-   @import url('https://fonts.googleapis.com/css?family=Staatliches|Source+Sans+Pro|PT+Serif')
-   
-      :root {
-         --background: rgba(0, 214, 170, 0.85);
-      }
-      
-      *, *::before, *::after {
-         box-sizing: border-box;
-      }
-      
-      body {
-         margin: 0;
-         background: #222;
-         font-family: 'Source Sans Pro', sans-serif;
-         font-weight: 400;
-      }
-      
-      .content {
-         height: 200vh;
-         background-image: url(//www.georgiafamily.com/wp-content/uploads/2016/05/family_beach_web.jpg);
-         background-color: #333;
-         background-blend-mode: multiply;
-         background-size: cover;
-         display: grid;
-         place-items: center
-      }
-      
-      /* navigation styles start here */
-      
-      header {
-         background: var(--background);
-         text-align: center;
-         position: fixed;
-         z-index: 999;
-         width: 100%;
-      }
-      
-      nav {
-         position: absolute;
-         text-align: left;
-         top: 100%;
-         left: 0;
-         background: var(--background);
-         width: 100%;
-         transform: scale(1,0);
-         transform-origin: top;
-         transition:transform 400ms ease-in-out;
-      }
-      
-      nav ul {
-         margin: 0; 
-         padding: 0;
-         list-style: none;
-      }
-      
-      nav li {
-         margin-bottom: 1em;
-         margin-left: 1em;
-      }
-      
-      nav a {
-         color: white;
-         text-decoration: none;
-         font-size: 1.2rem;
-         text-transform: uppercase;
-         opacity: 0;
-         transition: opacity 150ms ease-in-out;
-      }
-      
-      nav a:hover {
-         color: #000;
-      }
-      
-      .nav-toogle:checked ~ nav {
-         transform: scale: (1,1);
-      }
-      
-      .nav-toogle:checked ~ nav {
-         opacity: 1;
-         transition: opacity 250ms ease-in-out 250ms;
-      }
-      
-      .nav-toggle {
-         display: none;
-         height 100%;
-         display: flex;
-         align items: center;
-      }
-      
-      .nav-toggle-label {
-         position: absolute;
-         top: 0;
-         left: 0;
-         margin-left: 1em;
-         
-      }
-      
-      .nav-toggle-label span;
-      .nav-toggle-label span::before,
-      .nav-toggle-label span::after {
-         dsiplay: block;
-         background:white;
-         height: 2px;
-         width: 2e;
-         border-radius: 2px;
-         poisition relative
-      }
-      
-      .nav-toggle-label span::before,
-      .nav-toggle-label span::after {
-         content: '';
-         position: absolute;
-      }
-      
-      .nav-toggle-label span::before {
-         bottom: 7px
-      }
-      
-      .nav-toggle-label span::after {
-         top: 7px
-      }
-      
-      @media screen and (min-width: 800px) {
-         .nav-toggle-label {
-            display: none;
+      <style>
+
+         .container {
+            width: 80%
+               margin: 0 auto;
          }
          
          header {
-            display: grid;
-            grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+            
+            background-color: rgb(255, 255, 184)
+                   
          }
          
-         .logo
+         header::after {
+            content:"";
+            display: table;
+            clear: both;
+         }
+         
+         body {
+            
+            margin: 0;
+            fontweight: 400;
+            
+         }
+         
+         nav {
+            
+               float: right;
+            padding: 10px 0;
+         }
+        
+         
+        .img-container {
+        text-align: center;
       }
+         
+.logo {
+   
+   float: left;
+   padding: 10px 0;
+   
+         }       
+        
+         nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+         }
+         
+         nav li {
+            
+            display: inline-block;
+            margin-left: 70px;
+            padding-top: 23px;
+            
+            position: relative;
+            
+         }
+            
+            
+          nav a {
+             color: #444;
+             text-decoration: none;
+             text-transform: uppercase;
+             font-size: 14px;
+         }
+         
+            nav a:hover {
+               
+               color: red;
+               
+            }
+            
+         header {
+            
+            font-family: "Staatliches", sans-serif; 
+            text-transform: uppercase;
+         }
+            
+            body {
+               
+               font-family: "Average Sans", sans-serif; }
+            
+            nav a::before {
+               
+               content: " ";
+               display: block;
+               height: 5px;
+               width: 100%
+               background color: #444
+               
+               position: absolute;
+               top: 0;
+               width: 0%;
+               
+               transition: all ease in-out 250ms;
+            }
+            
+            nav a:hover::before {
+               
+               width: 100%
+                  
+            }
+        
+      </style>
+   
+<body>
+  
+   
+   <header>
       
-   </style>
-
-<html>
+      <div class= "container">
+         
+    <img src= "logo.jpg" alt= "logo" class= "logo" width= "300">
+         
+      </div>
+                                                                                                     
+      <div>
+         <nav>
+            
+            
+            <ul>
+               
+               <li><a href= "index.html">Home</a></li>
+               <li><a href= "forkids.html">For Kids</a></li>
+               <li><a href= "parentsblog.html">For Parents</a></li>
+               <li><a href= "funstuff.html">Fun Stuff</a></li>
+               <li><a href= "contact.html">Contact Us</a></li>
+               <li><a href= "contact.html"> </a></li>
+               
+            </ul>
+            
+         </nav>
+         
+      </div>
+      
+   </header>
+   
+   <div>
+   <h1> <center>Our Grandparents & Us</center> </h1>
+   <h4> <center>Connecting families across generations</center> </h4>
+      
+   </div>
+ 
+    <div class="img-container">
+       <img src= "https://cdn.aarp.net/content/dam/aarp/home-and-family/family-and-friends/2018/11/1140-family-vacation.jpg" alt= "Home page image, shows happy multigenerational and multiracial family playing on a beach!" width= "1435">  
+    </div>
+   
+   
+</body>
+        
+</html>
