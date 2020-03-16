@@ -5,6 +5,49 @@
   </head>
 
   <style>
+    
+    /* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 body{
   margin: 0px;
@@ -30,15 +73,15 @@ body{
   float: left;
 }
     
-#about{
-    background-color: rgb(156, 255, 192);
+#contact{
+    background-color: rgb(100, 200, 209);
   }
     
   </style>
   
   <body>
+    
 <center>
-
 <div id="navbar">
 <a href="index.html" id="linkref">HOME</a>
 <a href="forkids.html" id="linkref">FOR KIDS</a>
@@ -46,6 +89,15 @@ body{
 <a href="funstuff.html" id="linkref">FUN STUFF</a>
     </div id= about>
 </center>
+    
+<div class="container">
+  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  <div class="bottom-left">Bottom Left</div>
+  <div class="top-left">Top Left</div>
+  <div class="top-right">Top Right</div>
+  <div class="bottom-right">Bottom Right</div>
+  <div class="centered">Centered</div>
+</div>
 
     <h1> Our Grandparents & Us </h1>
     <h2> Connecting families across generations </h2>
