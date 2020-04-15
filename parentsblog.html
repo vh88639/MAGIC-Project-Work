@@ -5,12 +5,25 @@
   <head>
     
     <meta charset="UTF-8">
-    <title>Our Grandparents & Us Blog</title>
+    <title>Our Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
+    <link rel="stylesheet" href="styles/debug.css">
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/article.css">
+    <link rel="stylesheet" href="styles/article-image.css">
+    
     <style>
         
+
+      
+      .size-1 { grid-column: 4 / 5 }
+      .size-2 { grid-column: 3 / 6 }
+      .size-3 { grid-column: 2 / 7 }
+      .size-4 { grid-column: 1 / 8 }
+      
+      img.size-1, img.size-2, img.size-3, img.size-4 { width: 100%; }
+      
     </style>
     
 </head>
@@ -19,7 +32,10 @@
   
   <article>
     
-    <img src="Cloud Picture (BLOG).jpeg">
+    <img class="size-4" src="Cloud Picture (BLOG).jpeg">
+    <img class="size-3" src="Cloud Picture (BLOG).jpeg">
+    <img class="size-2" src="Cloud Picture (BLOG).jpeg">
+    <img class="size-1" src="Cloud Picture (BLOG).jpeg">
   
   </article>
   
