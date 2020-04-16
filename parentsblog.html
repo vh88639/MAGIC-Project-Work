@@ -27,13 +27,17 @@
       
       h2, p:not(:last-child) { margin-bottom: 2.4rem; }
 
-      h1    { font: 700 2.0rem/1.2 "Staatliches"; }
-      h2    { font: 400 1.5rem/1.2 "Staatliches"; }
-      time  { font: 700 1.0rem/1.2 "Staatliches"; }
-      h4    { font: 700 1.0rem/1.2 "Lato"; }
-      p     { font: 400 1.0rem/1.5 "Lato"; }
+      h1    { font: 700 2.0rem/1.2 "Staatliches"; hsl(000, 0%, 0%)}
+      h2    { font: 400 1.5rem/1.2 "Staatliches"; hsl(000, 100%, 40%)}
+      time  { font: 700 1.0rem/1.2 "Staatliches"; hsl(103, 100%, 72%)}
+      h4    { font: 700 1.0rem/1.2 "Lato"; hsl(210, 100%, 48%)}
+      p     { font: 400 1.0rem/1.5 "Lato"; hsl(000, 0%, 33%)}
       
-      a { box-shadow: inset 0 -0.25em black; }
+      #underline1 { box-shadow: inset 0 -0.25em hsl(61, 100%, 63%); }
+      #underline2 { box-shadow: inset 0 -0.25em hsl(103, 100%, 72%); }
+      
+      @media (max-width: 8.5in) { :root {font-size: 18px; } }
+      @media (max-width: 5.0in) { :root {font-size: 1p6x; } }
       
     </style>
     
@@ -43,14 +47,14 @@
   
   <article id="sandwich-generation">
     
-    <h1><a href="#sandwich-generation">The<em> Sandwich Generation</em></a></h1>
+    <h1><a id= "underline1" href="#sandwich-generation">The<em> Sandwich Generation</em></a></h1>
     <h2>How Can You Embrace Your Inner Sandwich?</h2>
     
     <time datetime="03-01-2020">MAR. 1, 2020</time>
     
     <p><em>As our health care options improve and expand</em>, our families are growing in number and 
       in age. Parents are now beginning to find themselves
-      <a href="https://www.usagovpolicy.com/the-increasing-burdens-of-the-sandwich-generation/">
+      <a id= "underline2" href="https://www.usagovpolicy.com/the-increasing-burdens-of-the-sandwich-generation/">
       "sandwiched" </a> between two generations- or 
       are they really getting torn apart?</p> 
     
@@ -109,10 +113,10 @@
       something so valuable, and now it's something you have. Ask questions, and answer them. 
       Embrace your inner sandwich, and let others have a bite of your goodness.</p>
     
-  <img class="size-4" src="Cloud Picture (BLOG).jpeg">
-  <img class="size-3" src="Cloud Picture (BLOG).jpeg">
-  <img class="size-2" src="Cloud Picture (BLOG).jpeg">
-  <img class="size-1" src="Cloud Picture (BLOG).jpeg">
+  <img class="size-4" src="Sandwich Generation BG.png">
+  <img class="size-3" src="Sandwich Generation BG.png">
+  <img class="size-2" src="Sandwich Generation BG.png">
+  <img class="size-1" src="Sandwich Generation BG.png">
 
   </article>
   
