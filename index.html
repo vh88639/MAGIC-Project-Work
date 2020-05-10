@@ -32,11 +32,6 @@ body {margin:0;}
   color: black;
 }
 
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
-}
       h1{ font: 700 3.0rem/1.2 "Bebas Neue"; }
       h2 { font: 400 2.0rem/1.2 "Bebas Neue"; }
       time { font: 700 2.0rem/1.2 "Bebas Neue"; }
@@ -44,8 +39,9 @@ body {margin:0;}
       p { font: 400 0.5rem/1.5 "Roboto"; }
       a {font: 400 1.5rem/1.5 "Bebas Neue"; }
 	
-      h1    { color: black; }
-      h2 { color: gold; }
+      h1    { color: rgb(212, 134, 32); }
+      h2 { color: rgb(207, 0, 0); }
+      time  { color: rgb(0, 143, 245); }
       h4    { color: rgb(155, 212, 95); }
       p     { color: rgb(77, 77, 77); }
  
@@ -61,28 +57,14 @@ body {margin:0;}
         height:         1.50rem;
       }
 	
-	/* Centered text */
-.image {
-  position: absolute;
-  top: 68%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-	.image2 {
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-	    /* Container holding the image and the text */
 .container {
-  position: relative;
-  text-align: center;
-}
-
-/* Centered text */
-.centered {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -102,9 +84,9 @@ body {margin:0;}
 </div>
 
 	    <div class="container">
-  <img src = "happy.kisses.jpg" alt="Bright bursts of scatterted sunlight illuminates the face of a joyous grandma receiving a heartfelt kiss from her small grandson." width=100%>
-      <div class="centered"><h1 id= title><font size="10">Our Grandparents & Us</font></h1>
-        <h2 id= subhead><font size="6">Connecting families across generations</font></h2></div>
+  <img src = "happy.kisses.jpg" alt="Bright bursts of scatterted sunlight illuminates the face of a joyous grandma receiving a heartfelt kiss from her small grandson." width=80% class="picture">
+  <h1 id= "title">Our Grandparents & Us</h1>
+  <h2 id= "subtitle">Connecting families across generations</h2></div>
 	</div>
 	<p>Technology is a powerful tool. But taking into account that kids are living in their teenage world of social media accounts, and grandparents are demanding technological instruction to impress their friends, it can feel as if technology is tearing your family apart! Kids are at risk of seeing themselves as unloved and ignored while their elder counterparts feel confused and left behind.</p>
   <p>Now, there’s a solution.</p>
