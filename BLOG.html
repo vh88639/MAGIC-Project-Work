@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+h1{ font: 700 3.0rem/1.2 "Bebas Neue"; }
+h2 { font: 400 2.0rem/1.2 "Bebas Neue"; }
+time { font: 700 2.0rem/1.2 "Bebas Neue"; }
+h4 {font: 700 1.0rem/1.2 "Roboto"; }
+p { font: 400 0.5rem/1.5 "Roboto"; }
+.links { font: 400 1.5rem/1.5 "Bebas Neue"; }
+      
+      
+h1    { color: rgb(212, 134, 32); }
+h2 { color: rgb(207, 0, 0); }
+time  { color: rgb(0, 143, 245); }
+h4    { color: rgb(155, 212, 95); }
+p     { color: rgb(77, 77, 77); }
+a {font: 400 1.5rem/1.5 "Bebas Neue"; }
+
+a { text-decoration: none; }
+
+</style>
+</head>
+<body>
+
+<h1>Welcome to our blog!</h1>
+<h4>Think the stress of balancing parenting and caretaking is too much? Check out these articles written by our team and other parents- you'll find tips and advice right for you. When you think you're ready to share, you can open your account details in the top-right hand corner and start writing.</h4>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://static.wixstatic.com/media/a27d24_607a141d359446f0a9a2be9130e1df33~mv2.png/v1/fill/w_896,h_599,al_c,q_90/a27d24_607a141d359446f0a9a2be9130e1df33~mv2.webp" alt="The Sandwich Generation- How To Embrace Your Inner Sandwich" style="width:100%">
+      <div class="container">
+        <h2>The Sandwich Generation</h2>
+        <p class="title">How To Embrace Your Inner Sandwich</p>
+        <p>As our health care options improve and expand, our families are growing in number and in age. Parents are now beginning to find themselves "sandwiched" between two generations- or are they really getting torn apart?</p>
+        <p>MAR. 1, 2020</p>
+        <p><button class="button"><a href = "https://vh88639.github.io/Our-Grandparents-Us/parentsblog.html#sandwich-generation">Read More!</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.clipartkey.com/mpngs/m/116-1166878_work-in-progress-no-background.png" alt="In Progress" style="width:100%">
+      <div class="container">
+        <h2>Article</h2>
+        <p class="title">Article Subheading</p>
+        <p>Descriptive text</p>
+        <p>Date Published</p>
+        <p><button class="button">Read More!</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://www.clipartkey.com/mpngs/m/116-1166878_work-in-progress-no-background.png" alt="In Progress" style="width:100%">
+      <div class="container">
+        <h2>Article</h2>
+        <p class="title">Article Subheading</p>
+        <p>Descriptive text</p>
+        <p>Date Published</p>
+        <p><button class="button">Read More!</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
