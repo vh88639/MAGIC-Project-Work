@@ -8,6 +8,30 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+	
+.navbar {
+  overflow: hidden;
+  background-color: hsla(14, 100%, 61%, 0.72);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+	
 html {
   box-sizing: border-box;
 }
@@ -66,11 +90,15 @@ html {
 </style>
 </head>
 <body>
-
-<h2>Responsive "Meet The Team" Section</h2>
-<p>Resize the browser window to see the effect.</p>
+	
+<div class="navbar">
+	<a href="index.html" class="link"> Our Grandparents & Us </a>
+  <a href="forkids.html" class="link">For Kids</a>
+	<a href="BLOG.html" class="link">Blog</a>
+	<a href="funstuff.html" class="link">Fun Stuff</a>
+  <a href="#contact" class="link">Contact</a>
+</div>
 <br>
-
 <div class="row">
   <div class="column">
     <div class="card">
