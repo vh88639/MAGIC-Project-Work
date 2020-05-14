@@ -138,56 +138,22 @@ a	{
   width: 80%;
 }
       
-<style>
-.fa {
-  padding: 20px;
-  font-size: 120px;
-  width: 70px;
-  text-align: center;
-  text-decoration: none;
+* {
+  box-sizing: border-box;
 }
 
-.fa {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.column {
+  float: left;
+  width: 16.6%;
+  padding: 5px;
 }
 
-.fa:hover {
-    opacity: 0.7;
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-pinterest {
-  background: #cb2027;
-  color: white;
-}
-
-.fa-tumblr {
-  background: #2c4762;
-  color: white;
-}
-	
 </style>
 </head>
 <body>
@@ -248,13 +214,26 @@ a	{
 <h2> Contact Us! </h2>
 <p> Questions? Comments? Concerns? Let us know through email and social media. <i>Work in progress,
 no social media accounts have been established yet.</i></p>
-<div id= "contact">
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-youtube"></a>
-<a href="#" class="fa fa-pinterest"></a>
-<a href="#" class="fa fa-tumblr"></a>
-<a href="#" class="fa fa-instagram"></a>
+<div class="row">
+  <div class="column">
+    <a href= ""><img src= "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01/e316f544f9094143b9eac01f1f19e697.webp" width = 100%></a>
+  </div>
+  <div class="column">
+    <a href= ""><img src= "https://static.wixstatic.com/media/9c4b521dd2404cd5a05ed6115f3a0dc8.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01/9c4b521dd2404cd5a05ed6115f3a0dc8.webp" width = 100%></a>
+  </div>
+  <div class="column">
+     <a href= ""><img src= "https://static.wixstatic.com/media/a1b09fe8b7f04378a9fe076748ad4a6a.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01/a1b09fe8b7f04378a9fe076748ad4a6a.webp" width = 100%></a>
+  </div>
+  <div class="column">
+    <a href= ""><img src= "https://static.wixstatic.com/media/28e77d0b179d4121891d847ed43de6cc.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01/28e77d0b179d4121891d847ed43de6cc.webp" width = 100%></a>
+  </div>
+  <div class="column">
+    <a href= ""><img src= "https://static.wixstatic.com/media/960fa430622c4b41a07c2c86948f87fb.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01/960fa430622c4b41a07c2c86948f87fb.webp" width = 100%></a>
+  </div>
+  <div class="column">
+    <a href=""><img src= "https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01/8d6893330740455c96d218258a458aa4.webp" width = 100%></a>
+  </div>
+</div>
 </div>
 	
 	</body>
